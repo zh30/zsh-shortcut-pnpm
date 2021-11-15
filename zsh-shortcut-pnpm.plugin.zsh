@@ -5,7 +5,6 @@ bindir=$(pnpm -g bin 2>/dev/null) \
   && path+=("$bindir")
 unset bindir
 
-alias ipnpm="wget -qO- https://get.pnpm.io/install.sh | sh -"
 alias p="pnpm"
 alias pi="pnpm init"
 # 管理依赖
@@ -32,6 +31,8 @@ alias plg="pnpm link --global"
 alias pul="pnpm unlink"
 alias pim="pnpm import"
 alias prb="pnpm rebuild"
+alias ppr="pnpm prune"
+alias pf="pnpm fetch"
 # 查看依赖
 alias pau="pnpm audit"
 alias pls="pnpm list"
@@ -49,7 +50,7 @@ alias pst="pnpm start"
 alias pd="pnpm dev"
 alias pb="pnpm build"
 # 环境管理
-alias pen="pnpm env"
+alias penv="pnpm env"
 # 杂项
 alias ppub="pnpm publish"
 alias ppubt="pnpm publish --tag"
@@ -57,7 +58,6 @@ alias ppubf="pnpm publish --force"
 alias pp="pnpm pack"
 alias prec="pnpm recursive"
 alias ps="pnpm store"
-alias psv="pnpm server"
 alias psv="pnpm server"
 alias pr="pnpm root"
 alias prg="pnpm root -g"
