@@ -5,9 +5,10 @@ bindir=$(pnpm -g bin 2>/dev/null) \
   && path+=("$bindir")
 unset bindir
 
+alias ipnpm="wget -qO- https://get.pnpm.io/install.sh | sh -"
 alias p="pnpm"
-# 管理依赖
 alias pi="pnpm init"
+# 管理依赖
 alias pin="pnpm install"
 alias pa="pnpm add"
 alias pad="pnpm add -D"
